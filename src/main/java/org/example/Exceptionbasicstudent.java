@@ -72,7 +72,7 @@ class Student{
 
         s.checkgrade();
         s.updategpa();
-        l.info(s.showdetails());
+        l.log(Level.INFO, () ->""+s.showdetails());
 
     }
 }
