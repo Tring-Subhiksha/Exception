@@ -6,17 +6,17 @@ import java.sql.SQLException;
 import java.util.Scanner;
 import java.util.logging.Logger;
 
-class database {
-   static database data=null;
+class Database {
+   static Database data=null;
    Logger s = Logger.getLogger("com.api.jar");
 
    Connection conn;
-   private database() {
+   private Database() {
 
    }
-   public static  database getdatabase() {
+   public static  Database getDatabase() {
        if (data == null)
-           data = new database();
+           data = new Database();
        return data;
    }
    void open(String url, String username, String password) throws SQLException {
@@ -38,7 +38,7 @@ class database {
           s.info("1.New Connection opened /n 2,Close the connection");
           s.info("Enter your choice:");
           int option=sc.nextInt();
-        database d = database.getdatabase();
+        Database d = Database.getDatabase();
           if(option==1) {
 
               s.info("Enter the database URL:");
