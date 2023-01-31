@@ -4,7 +4,7 @@ import java.util.Scanner;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-class ExceptionSimplepoint implements Cloneable{
+class ExceptionSimplepoint implements cloneable{
     String xcoordinates;
     String ycoordinates;
     String x="10.9";
