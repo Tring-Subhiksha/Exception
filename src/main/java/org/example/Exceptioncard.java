@@ -4,7 +4,7 @@ import java.util.Scanner;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-class Exceptioncard implements Cloneable{
+class Exceptioncard implements cloneable{
     String holdersname;
     String cardnumber;
     String expirationdate;
@@ -42,7 +42,7 @@ class Exceptioncard implements Cloneable{
             return this;
         }
     }
-    public static void main(String[] args)throws CloneNotSupportedException{
+    public static void main(String[] args){
         Exceptioncard c1=new Exceptioncard();
         l.log(Level.INFO, () ->"1,Same Card number--> returns True\n2,Different Card number--> returns False\n Answeris  "+c1.cardno());
         Exceptioncard c2=c1.cloneTest();
